@@ -1,0 +1,191 @@
+html ::selection {
+  background: #ff5e6b;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: rgb(96, 45, 68);
+  background: linear-gradient(180deg, #602d44 0%, #2f4454 35%, #254352 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  gap: 5px;
+}
+
+#welcome-title {
+  background-color: #dc617f;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #2e151b;
+  text-shadow: 0 0 3px #da7b93;
+  padding: 7px;
+  margin: 0.25em 0;
+}
+#title-text-main-page {
+  color: white;
+  text-decoration: none;
+}
+#title-text-main-page:hover {
+  text-decoration: underline;
+}
+
+#welcome-image-div {
+  width: 914px;
+  height: 325px;
+  padding: 28px 28px 28px;
+  padding-left: 18px;
+
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 0 0 22.5px #2e151b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px auto;
+}
+
+#welcome-h1 {
+  font-size: calc(1em + 25px);
+}
+#welcome-p {
+  font-size: calc(1em + 5px);
+}
+
+#welcome-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#welcome-banner img {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+#page-link {
+  font-size: 31px;
+  border-radius: 11px;
+  padding: 2.2px 5.6px;
+  font-weight: bold;
+  color: #ff3f4f;
+  background-color: #ffcdd1;
+}
+
+#page-link:hover {
+  color: #ffcdd1;
+  background-color: #ff3f4f;
+}
+
+#socials-div {
+  width: 700px;
+  height: 130px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.32em;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+p {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
+.socials-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-icon {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+  transition: all 0.35s ease-in-out;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.social-icon:hover {
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(0 0 13px rgba(0, 0, 0, 1));
+  transition: all 0.18s ease-in-out;
+}
+
+#about-me-div {
+  width: 914px;
+  height: 300px;
+  padding: 28px 28px 28px;
+  margin: 5px auto;
+
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 0 0 22.5px #2e151b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#birthdayCountdown {
+  font-weight: bold;
+  word-spacing: 0.1em;
+}
+
+#other-pages {
+  width: 600px;
+  height: auto;
+  padding: 28px 28px 28px;
+  margin: 5px auto;
+
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 0 0 22.5px #2e151b;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background: rgb(37, 67, 82);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 67, 82, 1) 0%,
+    rgba(47, 68, 84, 1) 10%,
+    rgba(88, 98, 106, 1) 100%
+  );
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 7px;
+  margin-top: 25px;
+  user-select: none;
+}
+footer p {
+  font-size: 18px;
+  margin: 2px 0;
+}

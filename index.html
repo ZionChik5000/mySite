@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal website of ZionChik. Explore projects, portfolio, programming experiences, and more about me!"
+    />
+    <meta
+      name="keywords"
+      content="ZionChik, portfolio, web development, programming, C#, HTML, CSS, JavaScript, software engineering, front-end development, back-end development, full-stack development, responsive design, UI/UX design, web design, coding, technology, developer, projects, programming languages, frameworks, web applications, digital portfolio"
+    />
+
+    <meta name="author" content="ZionChik" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>ZionChik's site</title>
+  </head>
+  <body>
+    <div id="welcome-title">
+      <h1><a id="title-text-main-page" href="index.html">Main page</a></h1>
+    </div>
+    <br />
+
+    <main>
+      <div id="welcome-image-div">
+        <img
+          src="resources/img/watermelon.png"
+          alt="Watermelon_picture"
+          style="
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+            width: 425px;
+            height: 225px;
+            float: left;
+          "
+        />
+        <div>
+          <h1 id="welcome-h1">Welcome to<br />ZionChik's website!</h1>
+          <p id="welcome-p">
+            Below are links to my socials and other<br />ways to reach out to
+            me.
+          </p>
+          <p id="welcome-p"><strong>You are currently on the:</strong></p>
+          <a id="page-link" href="index.html">main page</a>
+        </div>
+      </div>
+
+      <div id="socials-div">
+        <a
+          class="socials-links"
+          href="https://www.youtube.com/@ZionChik"
+          target="_blank"
+        >
+          <img
+            class="social-icon"
+            src="resources/icons/youtube.png"
+            alt="My Youtube channel"
+          />
+        </a>
+
+        <a
+          class="socials-links"
+          href="https://github.com/ZionChik5000"
+          title="GitHub"
+          target="_blank"
+        >
+          <img
+            class="social-icon"
+            src="resources/icons/github.png"
+            alt="My GitHub account"
+          />
+        </a>
+
+        <a
+          class="socials-links"
+          href="https://t.me/zionchik228"
+          title="Telegram"
+          target="_blank"
+        >
+          <img
+            class="social-icon"
+            src="resources/icons/telegram.png"
+            alt="My Telegram account"
+          />
+        </a>
+
+        <a
+          class="socials-links"
+          href="https://discord.com/users/848930166537322537"
+          title="Discord"
+          target="_blank"
+        >
+          <img
+            class="social-icon"
+            src="resources/icons/discord.png"
+            alt="My Discord account"
+          />
+        </a>
+      </div>
+
+      <div id="about-me-div">
+        <h1>About Me</h1>
+        <p style="text-align: center">
+          My nickname is ZionChik, and I have a passion for programming. I
+          started my
+          <br />
+          journey with
+          <a
+            href="https://scratch.mit.edu/users/Super_Creative5000/"
+            alt="My Scratch account"
+            styles="color: blue; font-weight: bold"
+            >Scratch</a
+          >, which laid the foundation for my understanding of logic.
+          <br />
+          My current focus on C# and JavaScript.
+        </p>
+        <p>
+          I'm currently living in Finland. I speak Ukrainian, Russian, English
+          and learning Finnish.
+        </p>
+        <p id="birthdayCountdown">Loading birthdayCounter.js ...</p>
+      </div>
+    </main>
+
+    <br />
+    <div id="other-pages">
+      <h1>Other pages to visit:</h1>
+      <br />
+      <a
+        href="html/oldSite.html"
+        alt="My old version of this website"
+        id="page-link"
+        >old_website</a
+      >
+    </div>
+
+    <br />
+    <br />
+    <footer>
+      <p>&copy; 2024 ZionChik | All rights reserved</p>
+      <p>
+        This website was created as part of a personal project to practice HTML
+        and CSS.
+      </p>
+    </footer>
+
+    <script src="js/birthdayCounter.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EZ55185JH3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-EZ55185JH3");
+    </script>
+  </body>
+</html>
