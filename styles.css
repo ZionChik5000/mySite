@@ -196,7 +196,7 @@ footer p {
   margin: 2px 0;
 }
 
-@media (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 480px) or (orientation: portrait) {
   #welcome-image-div {
     width: 95%;
     height: auto;
@@ -211,8 +211,8 @@ footer p {
     flex-wrap: wrap;
   }
   .social-icon {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
   #about-me-div {
     width: 95%;
