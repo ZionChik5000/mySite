@@ -18,6 +18,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  font-family: "Times New Roman", Times, serif;
   /*gap: 5px;*/
 }
 
