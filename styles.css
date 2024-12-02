@@ -196,7 +196,7 @@ footer p {
   margin: 2px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
   #welcome-image-div {
     width: 95%;
     height: auto;
