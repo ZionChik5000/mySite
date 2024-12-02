@@ -10,7 +10,9 @@ html ::selection {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   height: 100%;
+
   background: rgb(96, 45, 68);
   background: linear-gradient(180deg, #602d44 0%, #2f4454 35%, #254352 100%);
   background-repeat: no-repeat;
@@ -23,11 +25,11 @@ body {
   background-color: #dc617f;
   color: white;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 9px;
   box-shadow: 0 0 15px #2e151b;
-  text-shadow: 0 0 3px #da7b93;
+  text-shadow: 0 0 2% #da7b93;
   padding: 7px;
-  margin: 0.25em 0;
+  width: 100%;
 }
 #title-text-main-page {
   color: white;
@@ -150,6 +152,10 @@ p {
   align-items: center;
   justify-content: space-evenly;
 }
+
+#about-me-div p {
+  text-align: center;
+}
 #birthdayCountdown {
   font-weight: bold;
   word-spacing: 0.1em;
@@ -188,4 +194,34 @@ footer {
 footer p {
   font-size: 18px;
   margin: 2px 0;
+}
+
+@media (max-width: 480px) {
+  #welcome-image-div {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
+  #welcome-image-div img {
+    float: none;
+  }
+  #socials-div {
+    width: 95%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .social-icon {
+    width: 150px;
+    height: 150px;
+  }
+  #about-me-div {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
+  #other-pages {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
 }
