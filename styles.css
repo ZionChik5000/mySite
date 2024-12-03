@@ -4,7 +4,7 @@ html ::selection {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   background-size: cover;
 
   font-family: "Times New Roman", Times, serif;
-  /*gap: 5px;*/
+  gap: 0%;
 }
 
 #welcome-title {
@@ -233,7 +233,11 @@ footer p {
   }
 }
 
-/* {
+span.glasp-extension {
+  display: none !important;
+}
+
+* {
   outline: 3.5px solid red !important;
 }
 img {
@@ -245,4 +249,4 @@ h1 {
 }
 a {
   outline: 3.5px solid blue !important;
-}*/
+}
