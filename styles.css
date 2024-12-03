@@ -206,6 +206,8 @@ footer p {
   }
   #welcome-image-div img {
     float: none;
+    width: 90% !important;
+    height: auto !important;
   }
   #socials-div {
     width: 95%;
@@ -226,4 +228,21 @@ footer p {
     height: auto;
     flex-direction: column;
   }
+  #other-pages h {
+    font-size: auto;
+  }
 }
+
+/* {
+  outline: 3.5px solid red !important;
+}
+img {
+  outline: 3.5px solid lightgreen !important;
+}
+p,
+h1 {
+  outline: 3.5px solid yellow !important;
+}
+a {
+  outline: 3.5px solid blue !important;
+}*/
