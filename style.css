@@ -9,7 +9,7 @@ html ::selection {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   width: 100%;
   height: 100%;
 
@@ -27,12 +27,31 @@ body {
   background-color: #dc617f;
   color: white;
   font-weight: bold;
-  border-radius: 9px;
+  border-radius: 10px;
   box-shadow: 0 0 15px #2e151b;
   text-shadow: 0 0 2% #da7b93;
   padding: 7px;
-  width: 100%;
+  width: calc(100% - 53px - 15px);
 }
+
+#change-theme-btn {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: lightgray;
+  box-shadow: 0 0 15px #2e151b;
+  cursor: pointer;
+}
+#change-theme-btn img {
+  width: 40px;
+  height: 40px;
+}
+
 #title-text-main-page {
   color: white;
   text-decoration: none;
@@ -79,7 +98,7 @@ a {
   transition: all 0.25s ease-in-out;
 }
 
-#page-link {
+.page-link {
   font-size: 31px;
   border-radius: 11px;
   padding: 2.2px 5.6px;
@@ -88,7 +107,7 @@ a {
   background-color: #ffcdd1;
 }
 
-#page-link:hover {
+.page-link:hover {
   color: #ffcdd1;
   background-color: #ff3f4f;
 }
@@ -199,6 +218,12 @@ footer p {
 }
 
 @media (max-width: 480px) or (orientation: portrait) {
+  body {
+    padding: 10px;
+  }
+  p {
+    font-size: 19px;
+  }
   #welcome-image-div {
     width: 95%;
     height: auto;
@@ -222,6 +247,7 @@ footer p {
     width: 95%;
     height: auto;
     flex-direction: column;
+    padding: 20px 20px 20px;
   }
   #other-pages {
     width: 95%;

@@ -13,11 +13,24 @@
     />
 
     <meta name="author" content="ZionChik" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>ZionChik's site</title>
   </head>
   <body>
+    <button onclick="changeTheme()" id="change-theme-btn">
+      <img
+        src="./resources/themeIcons/light.svg"
+        alt="Light mode icon"
+        id="light-theme-btn"
+      />
+      <img
+        src="./resources/themeIcons/dark.svg"
+        alt="Dark mode icon"
+        id="dark-theme-btn"
+      />
+    </button>
+
     <div id="welcome-title">
       <h1><a id="title-text-main-page" href="index.html">Main page</a></h1>
     </div>
@@ -25,7 +38,7 @@
 
     <div id="welcome-image-div">
       <img
-        src="resources/img/watermelon.png"
+        src="./resources/img/watermelon.png"
         alt="Watermelon_picture"
         style="
           filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
@@ -34,64 +47,70 @@
           float: left;
         "
       />
+
       <div>
         <h1 id="welcome-h1">Welcome to<br />ZionChik's website!</h1>
         <p id="welcome-p">
-          Below are links to my socials and other<br />ways to reach out to me.
+          Below are links to my socials and other ways to reach out to me.
         </p>
         <p id="welcome-p"><strong>You are currently on the:</strong></p>
-        <a id="page-link" href="index.html">main page</a>
+        <a class="page-link" href="./index.html">main page</a>
       </div>
     </div>
 
     <div id="socials-div">
+      <!--
+        html/redirect.html?redirect=
+        html/redirect.html?redirect=&bypass=true
+      -->
+
       <a
         class="socials-links"
-        href="https://www.youtube.com/@ZionChik"
+        href="html/redirect.html?redirect=https://www.youtube.com/@ZionChik"
         target="_blank"
       >
         <img
           class="social-icon"
-          src="resources/icons/youtube.png"
+          src="./resources/icons/youtube.png"
           alt="My Youtube channel"
         />
       </a>
 
       <a
         class="socials-links"
-        href="https://github.com/ZionChik5000"
+        href="html/redirect.html?redirect=https://github.com/ZionChik5000&bypass=true"
         title="GitHub"
         target="_blank"
       >
         <img
           class="social-icon"
-          src="resources/icons/github.png"
+          src="./resources/icons/github.png"
           alt="My GitHub account"
         />
       </a>
 
       <a
         class="socials-links"
-        href="https://t.me/zionchik228"
+        href="html/redirect.html?redirect=https://t.me/zionchik228"
         title="Telegram"
         target="_blank"
       >
         <img
           class="social-icon"
-          src="resources/icons/telegram.png"
+          src="./resources/icons/telegram.png"
           alt="My Telegram account"
         />
       </a>
 
       <a
         class="socials-links"
-        href="https://discord.com/users/848930166537322537"
+        href="html/redirect.html?redirect=https://discord.com/users/848930166537322537&bypass=true"
         title="Discord"
         target="_blank"
       >
         <img
           class="social-icon"
-          src="resources/icons/discord.png"
+          src="./resources/icons/discord.png"
           alt="My Discord account"
         />
       </a>
@@ -100,22 +119,13 @@
     <div id="about-me-div">
       <h1>About Me</h1>
       <p>
-        My nickname is ZionChik, and I have a passion for programming. I started
-        my
-        <br />
-        journey with
-        <a
-          href="https://scratch.mit.edu/users/Super_Creative5000/"
-          alt="My Scratch account"
-          styles="color: blue; font-weight: bold"
-          >Scratch</a
-        >, which laid the foundation for my understanding of logic.
-        <br />
-        My current focus on C# and JavaScript.
+        My nickname is ZionChik, and I have a passion for programming. I started my
+        journey with Scratch, which laid the foundation for my understanding of logic. My
+        current focus on C# and JavaScript.
       </p>
       <p>
-        I'm currently living in Finland. I speak Ukrainian, Russian, English and
-        learning Finnish.
+        I'm currently living in Finland. I speak Ukrainian, Russian, English and learning
+        Finnish.
       </p>
       <p id="birthdayCountdown">Loading birthdayCounter.js ...</p>
     </div>
@@ -124,10 +134,7 @@
     <div id="other-pages">
       <h1>Other pages to visit:</h1>
       <br />
-      <a
-        href="html/oldSite.html"
-        alt="My old version of this website"
-        id="page-link"
+      <a href="./html/oldSite.html" alt="My old version of this website" class="page-link"
         >old_website</a
       >
     </div>
@@ -137,18 +144,14 @@
     <footer>
       <p>&copy; 2024 ZionChik | All rights reserved</p>
       <p>
-        This website was created as part of a personal project to practice HTML
-        and CSS.
+        This website was created as part of a personal project to practice HTML and CSS.
       </p>
     </footer>
 
-    <script src="js/birthdayCounter.js"></script>
-
+    <script src="./js/birthdayCounter.js"></script>
+    <script src="./js/darkTheme.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-EZ55185JH3"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EZ55185JH3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
